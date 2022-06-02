@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#game-body{
+    width: 100%;
+    height: 500px;
+    border-bottom: 13px solid rgb(34, 185, 62);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.mario{
+    position: absolute;
+    width: 140px;
+    bottom: -4px;
+    
+}
+
+#cano{
+    width: 140px;
+    position: absolute;
+    bottom: -28px;
+   
+    animation: loading-cano 3s linear infinite;
+}
+
+.nuvens{
+    position: absolute;
+    width: 350px;
+    animation: clouds 25s linear infinite;
+}
+
+.musica{
+    
+}
+
+.display-musica{
+    position: absolute;
+    width: 100PX;
+    height: 100px;
+    background-color: transparent;
+}
+
+@keyframes loading-cano{
+    from {
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+.dead {
+    animation: dead 1000ms ease-out;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+
+
+}
+
+@keyframes clouds {
+    from {
+        right: -350px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes dead {
+    0%{
+        bottom: 90;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: -2000;
+    }
+
+
+}
