@@ -14,6 +14,20 @@
     background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
+#botao{
+    position: absolute;  
+    left:200px;
+    width: 100px;
+    margin-top: 20px;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
 .mario{
     position: absolute;
     width: 140px;
